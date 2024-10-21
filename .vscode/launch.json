@@ -1,0 +1,32 @@
+{
+  "configurations": [
+    {
+      "name": "Simple Example - Web",
+      "type": "dart",
+      "request": "launch",
+      "program": "flutter_modular/simple_example/lib/main.dart",
+      "args": ["-d", "chrome", "--web-renderer", "html"]
+    },
+    {
+      "name": "Medium Example - Web",
+      "type": "dart",
+      "request": "launch",
+      "program": "flutter_modular/medium_example/lib/main.dart",
+      "args": ["-d", "chrome", "--web-renderer", "html"]
+    },
+    {
+      "name": "Full Example - Web",
+      "type": "dart",
+      "request": "launch",
+      "program": "flutter_modular/full_example/lib/main.dart",
+      "args": ["-d", "chrome", "--web-renderer", "html"]
+    },
+    {
+      "name": "Tinder Example - Web",
+      "type": "dart",
+      "request": "launch",
+      "program": "flutter_modular/tinder_example/lib/main.dart",
+      "args": ["-d", "chrome", "--web-renderer", "html"]
+    }
+  ]
+}
