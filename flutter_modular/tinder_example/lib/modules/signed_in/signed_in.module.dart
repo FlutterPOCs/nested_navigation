@@ -1,6 +1,6 @@
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:nested_navigation_flutter_modular/core/app.current_paths.dart';
-import 'package:nested_navigation_flutter_modular/modules/signed_in/profile/profile.module.dart';
+import 'package:nested_navigation_flutter_modular_tinder_example/core/app.current_paths.dart';
+import 'package:nested_navigation_flutter_modular_tinder_example/modules/signed_in/profile/profile.module.dart';
 
 import 'find/find.module.dart';
 import 'signed_in.root.dart';

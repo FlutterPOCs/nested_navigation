@@ -1,7 +1,7 @@
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:nested_navigation_flutter_modular/core/app.paths.dart';
-import 'package:nested_navigation_flutter_modular/modules/find/find/find.module.dart';
-import 'package:nested_navigation_flutter_modular/modules/profile/profile.page.dart';
+import 'package:nested_navigation_flutter_modular_medium_example/core/app.paths.dart';
+import 'package:nested_navigation_flutter_modular_medium_example/modules/find/find/find.module.dart';
+import 'package:nested_navigation_flutter_modular_medium_example/modules/profile/profile.page.dart';
 
 import 'app.root.dart';
 

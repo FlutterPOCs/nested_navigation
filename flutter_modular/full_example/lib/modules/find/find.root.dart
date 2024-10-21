@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:nested_navigation_flutter_modular/core/app.routes.dart';
-import 'package:nested_navigation_flutter_modular/core/navigation_manager.dart';
+import 'package:nested_navigation_flutter_modular_full_example/core/app.routes.dart';
+import 'package:nested_navigation_flutter_modular_full_example/core/navigation_manager.dart';
 
 enum FindRootType {
   person,
@@ -18,10 +18,8 @@ class FindRoot extends StatelessWidget {
       };
 
   void rootNavigate(FindRootType value) => switch (value) {
-        FindRootType.person =>
-          NavigationManager.navigate(AppRoutes.findPerson),
-        FindRootType.event =>
-          NavigationManager.navigate(AppRoutes.findEvent),
+        FindRootType.person => NavigationManager.navigate(AppRoutes.findPerson),
+        FindRootType.event => NavigationManager.navigate(AppRoutes.findEvent),
       };
 
   void onDestinationSelected(int index) {
@@ -38,10 +36,7 @@ class FindRoot extends StatelessWidget {
           valueListenable: NavigationManager.currentRoute,
           builder: (__, value, _) {
             return NavigationBar(
-              selectedIndex:
-                  value?.contains(AppRoutes.findPerson) == true
-                      ? 0
-                      : 1,
+              selectedIndex: value?.contains(AppRoutes.findPerson) == true ? 0 : 1,
               onDestinationSelected: onDestinationSelected,
               destinations: const [
                 NavigationDestination(

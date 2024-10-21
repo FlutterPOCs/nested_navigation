@@ -1,17 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:nested_navigation_flutter_modular/core/app.absolut_paths.routes.dart';
-import 'package:nested_navigation_flutter_modular/core/navigation_manager.dart';
+import 'package:nested_navigation_flutter_modular_tinder_example/core/app.absolut_paths.routes.dart';
+import 'package:nested_navigation_flutter_modular_tinder_example/core/navigation_manager.dart';
 
 class ProfileVerificationView extends StatefulWidget {
   const ProfileVerificationView({super.key});
 
   @override
-  State<ProfileVerificationView> createState() =>
-      _ProfileVerificationViewState();
+  State<ProfileVerificationView> createState() => _ProfileVerificationViewState();
 }
 
-abstract class ProfileEventViewViewModel
-    extends State<ProfileVerificationView> {}
+abstract class ProfileEventViewViewModel extends State<ProfileVerificationView> {}
 
 class _ProfileVerificationViewState extends ProfileEventViewViewModel {
   @override

@@ -1,5 +1,5 @@
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:nested_navigation_flutter_modular/modules/signed_in/profile/profile_settings/profile_settings.view.dart';
+import 'package:nested_navigation_flutter_modular_tinder_example/modules/signed_in/profile/profile_settings/profile_settings.view.dart';
 
 class ProfileSettingsModule extends Module {
   @override

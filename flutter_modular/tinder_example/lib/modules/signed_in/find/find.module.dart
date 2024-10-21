@@ -1,5 +1,5 @@
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:nested_navigation_flutter_modular/core/app.current_paths.dart';
+import 'package:nested_navigation_flutter_modular_tinder_example/core/app.current_paths.dart';
 
 import 'find.root.dart';
 import 'find_event/find_event.module.dart';

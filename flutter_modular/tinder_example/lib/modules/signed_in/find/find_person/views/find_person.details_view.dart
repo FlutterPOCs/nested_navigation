@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:nested_navigation_flutter_modular/core/app.absolut_paths.routes.dart';
-import 'package:nested_navigation_flutter_modular/core/match_buttons_area.dart';
-import 'package:nested_navigation_flutter_modular/core/navigation_manager.dart';
+import 'package:nested_navigation_flutter_modular_tinder_example/core/app.absolut_paths.routes.dart';
+import 'package:nested_navigation_flutter_modular_tinder_example/core/match_buttons_area.dart';
+import 'package:nested_navigation_flutter_modular_tinder_example/core/navigation_manager.dart';
 
 class FindPersonDetailsView extends StatefulWidget {
   const FindPersonDetailsView({super.key});
@@ -10,8 +10,7 @@ class FindPersonDetailsView extends StatefulWidget {
   State<FindPersonDetailsView> createState() => _FindPersonDetailsViewState();
 }
 
-abstract class FindPersonDetailsViewViewModel
-    extends State<FindPersonDetailsView> {}
+abstract class FindPersonDetailsViewViewModel extends State<FindPersonDetailsView> {}
 
 class _FindPersonDetailsViewState extends FindPersonDetailsViewViewModel {
   @override
@@ -53,8 +52,7 @@ class _FindPersonDetailsViewState extends FindPersonDetailsViewViewModel {
                     ),
                     child: IconButton(
                       onPressed: () {
-                        NavigationManager.navigate(
-                            AppAbsolutPathsRoutes.findPerson);
+                        NavigationManager.navigate(AppAbsolutPathsRoutes.findPerson);
                       },
                       icon: const Icon(
                         Icons.arrow_back_rounded,
@@ -101,8 +99,7 @@ class _FindPersonDetailsViewState extends FindPersonDetailsViewViewModel {
                                       Container(
                                         decoration: BoxDecoration(
                                           color: Colors.blue[300],
-                                          borderRadius:
-                                              BorderRadius.circular(100),
+                                          borderRadius: BorderRadius.circular(100),
                                         ),
                                       ),
                                       const Center(
@@ -226,16 +223,14 @@ class _FindPersonDetailsViewState extends FindPersonDetailsViewViewModel {
                                       'https://www.digitaletextil.com.br/blog/wp-content/uploads/2020/12/modelos-de-maio-corpo6.jpeg',
                                 ),
                                 evenirePersonDetailsImagePreview(
-                                  imagePath:
-                                      'https://cdn.eutotal.com/imagens/maio-eu-total-0-cke.jpg',
+                                  imagePath: 'https://cdn.eutotal.com/imagens/maio-eu-total-0-cke.jpg',
                                 ),
                                 evenirePersonDetailsImagePreview(
                                   imagePath:
                                       'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlIFMpaujqAcM7I-YWk8-dUME9ayoo1NWzARnc0Bb_T6Tv0slrMQvF6kbJN_LOQhbU9S4&usqp=CAU',
                                 ),
                                 evenirePersonDetailsImagePreview(
-                                  imagePath:
-                                      'https://cdn.eutotal.com/imagens/maio-eu-total-0-cke.jpg',
+                                  imagePath: 'https://cdn.eutotal.com/imagens/maio-eu-total-0-cke.jpg',
                                 ),
                                 evenirePersonDetailsImagePreview(
                                   imagePath:

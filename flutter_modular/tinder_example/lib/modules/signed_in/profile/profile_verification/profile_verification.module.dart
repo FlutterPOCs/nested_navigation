@@ -1,6 +1,5 @@
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:nested_navigation_flutter_modular/modules/signed_in/profile/profile_verification/profile_verification.view.dart';
-
+import 'package:nested_navigation_flutter_modular_tinder_example/modules/signed_in/profile/profile_verification/profile_verification.view.dart';
 
 class ProfileVerificationModule extends Module {
   @override

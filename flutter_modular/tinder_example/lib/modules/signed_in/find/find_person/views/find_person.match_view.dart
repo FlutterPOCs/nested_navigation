@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:nested_navigation_flutter_modular/core/app.absolut_paths.routes.dart';
-import 'package:nested_navigation_flutter_modular/core/navigation_manager.dart';
+import 'package:nested_navigation_flutter_modular_tinder_example/core/app.absolut_paths.routes.dart';
+import 'package:nested_navigation_flutter_modular_tinder_example/core/navigation_manager.dart';
 
 class FindPersonMatchView extends StatefulWidget {
   const FindPersonMatchView({super.key});
@@ -9,15 +9,14 @@ class FindPersonMatchView extends StatefulWidget {
   State<FindPersonMatchView> createState() => _FindPersonMatchViewState();
 }
 
-abstract class FindPersonMatchViewViewModel
-    extends State<FindPersonMatchView> {}
+abstract class FindPersonMatchViewViewModel extends State<FindPersonMatchView> {}
 
 class _FindPersonMatchViewState extends FindPersonMatchViewViewModel {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        decoration:  BoxDecoration(
+        decoration: BoxDecoration(
           gradient: LinearGradient(
             end: const Alignment(0.0, 0.4),
             begin: const Alignment(0.0, -1),

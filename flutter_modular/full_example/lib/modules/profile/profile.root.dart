@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:nested_navigation_flutter_modular/core/app.routes.dart';
-import 'package:nested_navigation_flutter_modular/core/navigation_manager.dart';
+import 'package:nested_navigation_flutter_modular_full_example/core/app.routes.dart';
+import 'package:nested_navigation_flutter_modular_full_example/core/navigation_manager.dart';
 
 enum ProfileRootType {
   settings,
@@ -18,10 +18,8 @@ class ProfileRoot extends StatelessWidget {
       };
 
   void rootNavigate(ProfileRootType value) => switch (value) {
-        ProfileRootType.settings =>
-          NavigationManager.navigate(AppRoutes.profileSettings),
-        ProfileRootType.verification =>
-          NavigationManager.navigate(AppRoutes.profileVerification),
+        ProfileRootType.settings => NavigationManager.navigate(AppRoutes.profileSettings),
+        ProfileRootType.verification => NavigationManager.navigate(AppRoutes.profileVerification),
       };
 
   void onDestinationSelected(int index) {
@@ -38,11 +36,7 @@ class ProfileRoot extends StatelessWidget {
           body: Row(
             children: <Widget>[
               NavigationRail(
-                selectedIndex:
-                    value?.contains(AppRoutes.profileSettings) ==
-                            true
-                        ? 0
-                        : 1,
+                selectedIndex: value?.contains(AppRoutes.profileSettings) == true ? 0 : 1,
                 onDestinationSelected: onDestinationSelected,
                 labelType: NavigationRailLabelType.all,
                 destinations: const [

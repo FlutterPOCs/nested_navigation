@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:nested_navigation_flutter_modular/core/app.absolut_paths.routes.dart';
-import 'package:nested_navigation_flutter_modular/core/match_buttons_area.dart';
-import 'package:nested_navigation_flutter_modular/core/navigation_manager.dart';
+import 'package:nested_navigation_flutter_modular_tinder_example/core/app.absolut_paths.routes.dart';
+import 'package:nested_navigation_flutter_modular_tinder_example/core/match_buttons_area.dart';
+import 'package:nested_navigation_flutter_modular_tinder_example/core/navigation_manager.dart';
 
 class FindPersonView extends StatefulWidget {
   const FindPersonView({super.key});
@@ -41,8 +41,7 @@ class _FindPersonViewState extends FindPersonViewViewModel {
           Container(
             margin: const EdgeInsets.symmetric(vertical: 0, horizontal: 12),
             child: InkWell(
-              onTap: () => NavigationManager.navigate(
-                  AppAbsolutPathsRoutes.findPersonDetails),
+              onTap: () => NavigationManager.navigate(AppAbsolutPathsRoutes.findPersonDetails),
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(24),
                 child: Image.network(

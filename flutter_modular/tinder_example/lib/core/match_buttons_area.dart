@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:nested_navigation_flutter_modular/core/app.absolut_paths.routes.dart';
+import 'package:nested_navigation_flutter_modular_tinder_example/core/app.absolut_paths.routes.dart';
 
 class MatchButtonsArea extends StatelessWidget {
   const MatchButtonsArea({

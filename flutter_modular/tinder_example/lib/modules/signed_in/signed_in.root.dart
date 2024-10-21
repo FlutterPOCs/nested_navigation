@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:nested_navigation_flutter_modular/core/app.absolut_paths.routes.dart';
-import 'package:nested_navigation_flutter_modular/core/navigation_manager.dart';
+import 'package:nested_navigation_flutter_modular_tinder_example/core/app.absolut_paths.routes.dart';
+import 'package:nested_navigation_flutter_modular_tinder_example/core/navigation_manager.dart';
 
 class SignedInRoot extends StatefulWidget {
   const SignedInRoot({super.key});
@@ -26,10 +26,8 @@ abstract class SignedInRootViewModel extends State<SignedInRoot> {
       };
 
   void rootNavigate(SignedInRootType value) => switch (value) {
-        SignedInRootType.find =>
-          NavigationManager.navigate(AppAbsolutPathsRoutes.findPerson),
-        SignedInRootType.chats =>
-          NavigationManager.navigate(AppAbsolutPathsRoutes.profileSettings),
+        SignedInRootType.find => NavigationManager.navigate(AppAbsolutPathsRoutes.findPerson),
+        SignedInRootType.chats => NavigationManager.navigate(AppAbsolutPathsRoutes.profileSettings),
       };
 
   void onDestinationSelected(int index) {
@@ -53,8 +51,7 @@ class _SignedInRootState extends SignedInRootViewModel {
         builder: (__, value, _) {
           return NavigationBar(
             backgroundColor: Colors.white,
-            selectedIndex:
-                value?.contains(AppAbsolutPathsRoutes.find) == true ? 0 : 1,
+            selectedIndex: value?.contains(AppAbsolutPathsRoutes.find) == true ? 0 : 1,
             elevation: 0,
             height: 52,
             onDestinationSelected: onDestinationSelected,

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:nested_navigation_flutter_modular/core/app.absolut_paths.routes.dart';
-import 'package:nested_navigation_flutter_modular/core/navigation_manager.dart';
+import 'package:nested_navigation_flutter_modular_tinder_example/core/app.absolut_paths.routes.dart';
+import 'package:nested_navigation_flutter_modular_tinder_example/core/navigation_manager.dart';
 
 class FindRoot extends StatefulWidget {
   const FindRoot({super.key});
@@ -20,10 +20,8 @@ abstract class FindRootViewModel extends State<FindRoot> {
       };
 
   void rootNavigate(FindRootPageType value) => switch (value) {
-        FindRootPageType.person =>
-          NavigationManager.navigate(AppAbsolutPathsRoutes.findPerson),
-        FindRootPageType.event =>
-          NavigationManager.navigate(AppAbsolutPathsRoutes.findEvent),
+        FindRootPageType.person => NavigationManager.navigate(AppAbsolutPathsRoutes.findPerson),
+        FindRootPageType.event => NavigationManager.navigate(AppAbsolutPathsRoutes.findEvent),
       };
 
   void onDestinationSelected(int index) {
@@ -49,10 +47,7 @@ class _FindRootState extends FindRootViewModel {
             return NavigationBar(
               indicatorColor: Colors.red.shade300,
               backgroundColor: Colors.red,
-              selectedIndex:
-                  value?.contains(AppAbsolutPathsRoutes.findPerson) == true
-                      ? 0
-                      : 1,
+              selectedIndex: value?.contains(AppAbsolutPathsRoutes.findPerson) == true ? 0 : 1,
               elevation: 0,
               height: 52,
               onDestinationSelected: onDestinationSelected,

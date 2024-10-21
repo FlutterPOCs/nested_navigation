@@ -1,6 +1,6 @@
 import 'package:flutter/widgets.dart';
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:nested_navigation_flutter_modular/app.module.dart';
+import 'package:nested_navigation_flutter_modular_full_example/app.module.dart';
 
 import 'app.widget.dart';
 

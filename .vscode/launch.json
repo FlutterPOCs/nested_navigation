@@ -5,28 +5,28 @@
       "type": "dart",
       "request": "launch",
       "program": "flutter_modular/simple_example/lib/main.dart",
-      "args": ["-d", "chrome", "--web-renderer", "html"]
+      "args": ["-d", "chrome", "--web-renderer", "canvaskit"]
     },
     {
       "name": "Medium Example - Web",
       "type": "dart",
       "request": "launch",
       "program": "flutter_modular/medium_example/lib/main.dart",
-      "args": ["-d", "chrome", "--web-renderer", "html"]
+      "args": ["-d", "chrome", "--web-renderer", "canvaskit"]
     },
     {
       "name": "Full Example - Web",
       "type": "dart",
       "request": "launch",
       "program": "flutter_modular/full_example/lib/main.dart",
-      "args": ["-d", "chrome", "--web-renderer", "html"]
+      "args": ["-d", "chrome", "--web-renderer", "canvaskit"]
     },
     {
       "name": "Tinder Example - Web",
       "type": "dart",
       "request": "launch",
       "program": "flutter_modular/tinder_example/lib/main.dart",
-      "args": ["-d", "chrome", "--web-renderer", "html"]
+      "args": ["-d", "chrome", "--web-renderer", "canvaskit"]
     }
   ]
 }

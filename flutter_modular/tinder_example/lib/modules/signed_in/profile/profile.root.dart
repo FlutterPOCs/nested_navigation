@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:nested_navigation_flutter_modular/core/app.absolut_paths.routes.dart';
-import 'package:nested_navigation_flutter_modular/core/navigation_manager.dart';
+import 'package:nested_navigation_flutter_modular_tinder_example/core/app.absolut_paths.routes.dart';
+import 'package:nested_navigation_flutter_modular_tinder_example/core/navigation_manager.dart';
 
 class ProfileRoot extends StatefulWidget {
   const ProfileRoot({super.key});
@@ -20,10 +20,8 @@ abstract class ProfileRootViewModel extends State<ProfileRoot> {
       };
 
   void rootNavigate(ProfileRootPageType value) => switch (value) {
-        ProfileRootPageType.person =>
-          NavigationManager.navigate(AppAbsolutPathsRoutes.profileSettings),
-        ProfileRootPageType.event =>
-          NavigationManager.navigate(AppAbsolutPathsRoutes.profileVerification),
+        ProfileRootPageType.person => NavigationManager.navigate(AppAbsolutPathsRoutes.profileSettings),
+        ProfileRootPageType.event => NavigationManager.navigate(AppAbsolutPathsRoutes.profileVerification),
       };
 
   void onDestinationSelected(int index) {
@@ -49,11 +47,7 @@ class _ProfileRootState extends ProfileRootViewModel {
               NavigationRail(
                 indicatorColor: Colors.transparent,
                 backgroundColor: Colors.white,
-                selectedIndex:
-                    value?.contains(AppAbsolutPathsRoutes.profileSettings) ==
-                            true
-                        ? 0
-                        : 1,
+                selectedIndex: value?.contains(AppAbsolutPathsRoutes.profileSettings) == true ? 0 : 1,
                 onDestinationSelected: onDestinationSelected,
                 labelType: NavigationRailLabelType.selected,
                 destinations: const <NavigationRailDestination>[

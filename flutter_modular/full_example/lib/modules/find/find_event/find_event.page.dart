@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:nested_navigation_flutter_modular/core/app.routes.dart';
-import 'package:nested_navigation_flutter_modular/core/navigation_manager.dart';
+import 'package:nested_navigation_flutter_modular_full_example/core/app.routes.dart';
+import 'package:nested_navigation_flutter_modular_full_example/core/navigation_manager.dart';
 
 class FindEventPage extends StatelessWidget {
   const FindEventPage({super.key});

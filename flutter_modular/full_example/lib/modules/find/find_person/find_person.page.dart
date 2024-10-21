@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:nested_navigation_flutter_modular/core/app.routes.dart';
-import 'package:nested_navigation_flutter_modular/core/navigation_manager.dart';
+import 'package:nested_navigation_flutter_modular_full_example/core/app.routes.dart';
+import 'package:nested_navigation_flutter_modular_full_example/core/navigation_manager.dart';
 
 class FindPersonPage extends StatelessWidget {
   const FindPersonPage({super.key});
@@ -14,8 +14,7 @@ class FindPersonPage extends StatelessWidget {
       body: Center(
         child: ElevatedButton(
           onPressed: () {
-            NavigationManager.pushNamed(
-                AppRoutes.findPersonDetails);
+            NavigationManager.pushNamed(AppRoutes.findPersonDetails);
           },
           child: const Text('Push to "Find Person Details Page"'),
         ),

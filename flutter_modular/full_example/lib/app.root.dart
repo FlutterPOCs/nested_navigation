@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:nested_navigation_flutter_modular/core/app.routes.dart';
-import 'package:nested_navigation_flutter_modular/core/navigation_manager.dart';
+import 'package:nested_navigation_flutter_modular_full_example/core/app.routes.dart';
+import 'package:nested_navigation_flutter_modular_full_example/core/navigation_manager.dart';
 
 enum AppRootType {
   find,
@@ -29,10 +29,8 @@ abstract class AppRootViewModel extends State<AppRoot> {
       };
 
   void rootNavigate(AppRootType value) => switch (value) {
-        AppRootType.find =>
-          NavigationManager.navigate(AppRoutes.findPerson),
-        AppRootType.profle =>
-          NavigationManager.navigate(AppRoutes.profileSettings),
+        AppRootType.find => NavigationManager.navigate(AppRoutes.findPerson),
+        AppRootType.profle => NavigationManager.navigate(AppRoutes.profileSettings),
       };
 
   void onDestinationSelected(int index) {
@@ -50,8 +48,7 @@ class _AppRootState extends AppRootViewModel {
         valueListenable: NavigationManager.currentRoute,
         builder: (__, value, _) {
           return NavigationBar(
-            selectedIndex:
-                value?.contains(AppRoutes.find) == true ? 0 : 1,
+            selectedIndex: value?.contains(AppRoutes.find) == true ? 0 : 1,
             onDestinationSelected: onDestinationSelected,
             destinations: const [
               NavigationDestination(
