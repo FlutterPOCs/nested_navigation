@@ -1,0 +1,12 @@
+{
+  "configurations": [
+    {
+      "name": "Flutter",
+      "type": "dart",
+      "request": "launch",
+      "program": "lib/main.dart",
+      "args": ["-d", "chrome", "--web-renderer", "html", "--web-port", "8081"],
+      "noDebug": true,
+    }
+  ]
+}
