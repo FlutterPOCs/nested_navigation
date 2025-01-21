@@ -7,7 +7,7 @@ class ProfileModule extends Module {
 
   @override
   void routes(r) {
-    r.child('/', child: (context) => const ProfileRoot(), children: [
+    r.child('/', child: (context) => const ProfileRootScreen(), children: [
       ModuleRoute(profileSettingsModule, module: ProfileSettingsModule()),
       ModuleRoute(profileVerificationModule, module: ProfileVerificationModule()),
     ]);
