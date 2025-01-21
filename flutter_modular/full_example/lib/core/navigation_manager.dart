@@ -9,8 +9,6 @@ class NavigationManager {
   static void navigate(String route) {
     if (route.isNotEmpty) {
       log('currentRoute >>> $route');
-      // EXAMPLE 1
-      // currentRoute.value = route;
       Modular.to.navigate(route);
     }
   }

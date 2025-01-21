@@ -17,8 +17,8 @@ class ProfileRoot extends StatelessWidget {
       };
 
   void rootNavigate(ProfileRootType value) => switch (value) {
-        ProfileRootType.settings => NavigationManager.navigate(AppRoutes.profileSettingsRoute),
-        ProfileRootType.verification => NavigationManager.navigate(AppRoutes.profileVerificationRoute),
+        ProfileRootType.settings => NavigationManager.navigate(AppRoutes.profileSettingsPage),
+        ProfileRootType.verification => NavigationManager.navigate(AppRoutes.profileVerificationPage),
       };
 
   void onDestinationSelected(int index) {
@@ -35,7 +35,7 @@ class ProfileRoot extends StatelessWidget {
           body: Row(
             children: <Widget>[
               NavigationRail(
-                selectedIndex: value?.contains(AppRoutes.profileSettingsRoute) == true ? 0 : 1,
+                selectedIndex: value?.contains(AppRoutes.profileSettingsPage) == true ? 0 : 1,
                 onDestinationSelected: onDestinationSelected,
                 labelType: NavigationRailLabelType.all,
                 destinations: const [

@@ -17,8 +17,8 @@ class FindRoot extends StatelessWidget {
       };
 
   void rootNavigate(FindRootType value) => switch (value) {
-        FindRootType.person => NavigationManager.navigate(AppRoutes.findPersonRoute),
-        FindRootType.event => NavigationManager.navigate(AppRoutes.findEventRoute),
+        FindRootType.person => NavigationManager.navigate(AppRoutes.findPersonPage),
+        FindRootType.event => NavigationManager.navigate(AppRoutes.findEventPage),
       };
 
   void onDestinationSelected(int index) {
@@ -35,7 +35,7 @@ class FindRoot extends StatelessWidget {
           valueListenable: NavigationManager.currentRoute,
           builder: (__, value, _) {
             return NavigationBar(
-              selectedIndex: value?.contains(AppRoutes.findPersonRoute) == true ? 0 : 1,
+              selectedIndex: value?.contains(AppRoutes.findPersonPage) == true ? 0 : 1,
               onDestinationSelected: onDestinationSelected,
               destinations: const [
                 NavigationDestination(

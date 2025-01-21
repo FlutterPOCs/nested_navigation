@@ -2,21 +2,28 @@ import 'package:nested_navigation_flutter_modular_full_example/exports.dart';
 
 /// AppAbsolutPaths
 class AppRoutes {
-  /// AppModule
-  static String find() => AppModule.findPath;
-  static String profile() => AppModule.profilePath;
+  /// MODULES
+  static String findModule() => AppModule.findModule;
+  /* */ static String findPersonModule() =>
+      findModule() + FindModule.findPersonModule;
+  /* */ static String findEventModule() =>
+      findModule() + FindModule.findEventModule;
+  static String profileModule() => AppModule.profileModule;
+  /* */ static String profileSettingsModule() =>
+      profileModule() + ProfileModule.profileSettingsModule;
+  /* */ static String profileVerificationModule() =>
+      profileModule() + ProfileModule.profileVerificationModule;
 
-  /// FindModule
-  /* */ static String findPersonRoute =
-      find() + FindModule.personPath; // FindPersonModule initialPath
-  /* */ static String findEventRoute =
-      find() + FindModule.eventPath; // FindEventModule initialPath
-
-  /// FindPersonModule
-  /* */ /* */ static String findPersonDetailsRoute =
-      findPersonRoute + FindPersonModule.detailsPath;
-
-  /// ProfileModule
-  /* */ static String profileSettingsRoute = profile() + ProfileModule.settingsPath; // ProfileSettingsModule initialPath
-  /* */ static String profileVerificationRoute = profile() + ProfileModule.verificationPath; // ProfileVerificationModule initialPath
+  /// PAGES
+  /* */ /* */ static String findPersonPage =
+      findPersonModule() + FindPersonModule.findPersonPage;
+  /* */ /* */ /* */ static String findPersonDetailsPage =
+      findPersonModule() + FindPersonModule.findPersonDetailsPage;
+  /* */ /* */ static String findEventPage =
+      findEventModule() + FindEventModule.findEventPage;
+  /* */ /* */ static String profileSettingsPage =
+      profileSettingsModule() + ProfileSettingsModule.profileSettingsPage;
+  /* */ /* */ static String profileVerificationPage =
+      profileVerificationModule() +
+          ProfileVerificationModule.profileVerificationPage;
 }

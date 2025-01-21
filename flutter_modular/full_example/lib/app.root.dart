@@ -17,7 +17,7 @@ class AppRoot extends StatefulWidget {
 abstract class AppRootViewModel extends State<AppRoot> {
   @override
   void initState() {
-    NavigationManager.navigate(AppRoutes.findPersonRoute);
+    NavigationManager.navigate(AppRoutes.findPersonPage);
     super.initState();
   }
 
@@ -28,8 +28,8 @@ abstract class AppRootViewModel extends State<AppRoot> {
       };
 
   void rootNavigate(AppRootType value) => switch (value) {
-        AppRootType.find => NavigationManager.navigate(AppRoutes.findPersonRoute),
-        AppRootType.profle => NavigationManager.navigate(AppRoutes.profileSettingsRoute),
+        AppRootType.find => NavigationManager.navigate(AppRoutes.findPersonPage),
+        AppRootType.profle => NavigationManager.navigate(AppRoutes.profileSettingsPage),
       };
 
   void onDestinationSelected(int index) {
@@ -47,7 +47,7 @@ class _AppRootState extends AppRootViewModel {
         valueListenable: NavigationManager.currentRoute,
         builder: (__, value, _) {
           return NavigationBar(
-            selectedIndex: value?.contains(AppRoutes.find()) == true ? 0 : 1,
+            selectedIndex: value?.contains(AppRoutes.findModule()) == true ? 0 : 1,
             onDestinationSelected: onDestinationSelected,
             destinations: const [
               NavigationDestination(

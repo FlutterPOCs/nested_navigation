@@ -13,7 +13,7 @@ class FindEventPage extends StatelessWidget {
       body: Center(
         child: ElevatedButton(
           onPressed: () {
-            NavigationManager.navigate(AppRoutes.findPersonRoute);
+            NavigationManager.navigate(AppRoutes.findPersonPage);
           },
           child: const Text('Navigate to "Find Person Page"'),
         ),

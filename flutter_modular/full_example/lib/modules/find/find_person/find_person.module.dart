@@ -4,13 +4,13 @@ import 'find_person.details.page.dart';
 import 'find_person.page.dart';
 
 class FindPersonModule extends Module {
-  static const String initialPath = '/';
-  static const String detailsPath = '/details';
+  static const String findPersonPage = '/';
+  static const String findPersonDetailsPage = '/details';
 
   @override
   void routes(r) {
-    r.child(initialPath, child: (context) => const FindPersonPage());
-    r.child(detailsPath,
+    r.child(findPersonPage, child: (context) => const FindPersonPage());
+    r.child(findPersonDetailsPage,
         child: (context) => const FindPersonDetailsPage());
   }
 }

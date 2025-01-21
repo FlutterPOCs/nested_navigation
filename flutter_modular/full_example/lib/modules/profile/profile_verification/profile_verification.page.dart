@@ -13,7 +13,7 @@ class ProfileVerificationPage extends StatelessWidget {
       body: Center(
         child: ElevatedButton(
           onPressed: () {
-            NavigationManager.navigate(AppRoutes.findEventRoute);
+            NavigationManager.navigate(AppRoutes.findEventPage);
           },
           child: const Text('Navigate to "Find Event Page"'),
         ),

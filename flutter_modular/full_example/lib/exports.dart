@@ -10,3 +10,4 @@ export 'app.module.dart';
 export 'modules/profile/profile_settings/profile_settings.page.dart';
 export 'modules/find/find_event/find_event.page.dart';
 export 'modules/find/find.module.dart';
+export 'modules/find/find_event/find_event.module.dart';

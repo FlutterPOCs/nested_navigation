@@ -13,7 +13,7 @@ class FindPersonPage extends StatelessWidget {
       body: Center(
         child: ElevatedButton(
           onPressed: () {
-            NavigationManager.pushNamed(AppRoutes.findPersonDetailsRoute);
+            NavigationManager.pushNamed(AppRoutes.findPersonDetailsPage);
           },
           child: const Text('Push to "Find Person Details Page"'),
         ),
