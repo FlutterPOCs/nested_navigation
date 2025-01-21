@@ -17,8 +17,8 @@ class ProfileRoot extends StatelessWidget {
       };
 
   void rootNavigate(ProfileRootType value) => switch (value) {
-        ProfileRootType.settings => NavigationManager.navigate(AppRoutes.profileSettingsPage),
-        ProfileRootType.verification => NavigationManager.navigate(AppRoutes.profileVerificationPage),
+        ProfileRootType.settings => NavigatorManager.navigate(AppRoutes.profileSettingsPage),
+        ProfileRootType.verification => NavigatorManager.navigate(AppRoutes.profileVerificationPage),
       };
 
   void onDestinationSelected(int index) {
@@ -29,7 +29,7 @@ class ProfileRoot extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ValueListenableBuilder(
-      valueListenable: NavigationManager.currentRoute,
+      valueListenable: NavigatorManager.currentRoute,
       builder: (__, value, _) {
         return Scaffold(
           body: Row(

@@ -13,7 +13,7 @@ class FindPersonDetailsPage extends StatelessWidget {
       body: Center(
         child: ElevatedButton(
           onPressed: () {
-            NavigationManager.navigate(AppRoutes.profileSettingsPage);
+            NavigatorManager.navigate(AppRoutes.profileSettingsPage);
           },
           child: const Text('Navigate to "profile Settings Page"'),
         ),

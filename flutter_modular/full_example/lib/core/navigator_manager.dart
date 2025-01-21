@@ -3,7 +3,7 @@ import 'dart:developer';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 
-class NavigationManager {
+class NavigatorManager {
   static ValueNotifier<String?> currentRoute = ValueNotifier(null);
 
   static void navigate(String route) {

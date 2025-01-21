@@ -1,4 +1,4 @@
-export 'core/navigation_manager.dart';
+export 'core/navigator_manager.dart';
 export 'core/app.routes.dart';
 export 'modules/profile/profile.module.dart';
 export 'modules/profile/profile.root.dart';

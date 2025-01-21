@@ -11,7 +11,7 @@ class AppWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     Modular.to.addListener(() {
       log('Rota atual: ${Modular.to.path}');
-      NavigationManager.currentRoute.value = Modular.to.path;
+      NavigatorManager.currentRoute.value = Modular.to.path;
     });
 
     return MaterialApp.router(
