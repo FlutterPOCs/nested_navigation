@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:nested_navigation_flutter_modular_full_example/exports.dart';
+import 'package:nested_navigation_flutter_modular_full_example/lib.dart';
 
-enum FindRootType {
+enum FindRootPageType {
   person,
   event,
 }
@@ -9,16 +9,16 @@ enum FindRootType {
 abstract class FindRootScreenViewModel extends StatelessWidget {
   const FindRootScreenViewModel({super.key});
 
-  FindRootType _getRootType(int value) => switch (value) {
-        0 => FindRootType.person,
-        1 => FindRootType.event,
-        _ => FindRootType.person,
+  FindRootPageType _getRootType(int value) => switch (value) {
+        0 => FindRootPageType.person,
+        1 => FindRootPageType.event,
+        _ => FindRootPageType.person,
       };
 
-  void rootNavigate(FindRootType value) => switch (value) {
-        FindRootType.person =>
+  void rootNavigate(FindRootPageType value) => switch (value) {
+        FindRootPageType.person =>
           NavigatorManager.navigate(AppRoutes.findPersonPage),
-        FindRootType.event =>
+        FindRootPageType.event =>
           NavigatorManager.navigate(AppRoutes.findEventPage),
       };
 

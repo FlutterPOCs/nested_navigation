@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:nested_navigation_flutter_modular_full_example/exports.dart';
+import 'package:nested_navigation_flutter_modular_full_example/lib.dart';
 
-enum ProfileRootType {
+enum ProfileRootPageType {
   settings,
   verification,
 }
@@ -9,16 +9,16 @@ enum ProfileRootType {
 abstract class ProfileRootScreenViewModel extends StatelessWidget {
   const ProfileRootScreenViewModel({super.key});
 
-  ProfileRootType _getRootType(int value) => switch (value) {
-        0 => ProfileRootType.settings,
-        1 => ProfileRootType.verification,
-        _ => ProfileRootType.settings,
+  ProfileRootPageType _getRootType(int value) => switch (value) {
+        0 => ProfileRootPageType.settings,
+        1 => ProfileRootPageType.verification,
+        _ => ProfileRootPageType.settings,
       };
 
-  void rootNavigate(ProfileRootType value) => switch (value) {
-        ProfileRootType.settings =>
+  void rootNavigate(ProfileRootPageType value) => switch (value) {
+        ProfileRootPageType.settings =>
           NavigatorManager.navigate(AppRoutes.profileSettingsPage),
-        ProfileRootType.verification =>
+        ProfileRootPageType.verification =>
           NavigatorManager.navigate(AppRoutes.profileVerificationPage),
       };
 

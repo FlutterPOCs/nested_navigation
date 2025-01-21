@@ -1,8 +1,8 @@
 import 'package:flutter/widgets.dart';
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:nested_navigation_flutter_modular_full_example/exports.dart';
+import 'package:nested_navigation_flutter_modular_full_example/lib.dart';
 
-import 'app.widget.dart';
+import 'core/main/app.widget.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
