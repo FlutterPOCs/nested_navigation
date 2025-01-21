@@ -5,11 +5,14 @@ import 'find.root.dart';
 import 'find_event/find_event.module.dart';
 
 class FindModule extends Module {
+  static const String personPath = '/person';
+  static const String eventPath = '/event';
+
   @override
   void routes(r) {
     r.child('/', child: (context) => const FindRoot(), children: [
-      ModuleRoute(AppPaths.person, module: FindPersonModule()),
-      ModuleRoute(AppPaths.event, module: FindEventModule()),
+      ModuleRoute(personPath, module: FindPersonModule()),
+      ModuleRoute(eventPath, module: FindEventModule()),
     ]);
   }
 }

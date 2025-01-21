@@ -13,7 +13,7 @@ class ProfileSettingsPage extends StatelessWidget {
       body: Center(
         child: ElevatedButton(
           onPressed: () {
-            NavigationManager.navigate(AppRoutes.profileVerification);
+            NavigationManager.navigate(AppRoutes.profileVerificationRoute);
           },
           child: const Text('Navigate to "Profile Veification Page"'),
         ),

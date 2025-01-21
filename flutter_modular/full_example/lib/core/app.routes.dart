@@ -2,22 +2,21 @@ import 'package:nested_navigation_flutter_modular_full_example/exports.dart';
 
 /// AppAbsolutPaths
 class AppRoutes {
-  /// Profile
-  static const String profile = AppPaths.profile;
+  /// AppModule
+  static String find() => AppModule.findPath;
+  static String profile() => AppModule.profilePath;
 
-  /// Profile Settings
-  static const String profileSettings = profile + AppPaths.settings;
+  /// FindModule
+  /* */ static String findPersonRoute =
+      find() + FindModule.personPath; // FindPersonModule initialPath
+  /* */ static String findEventRoute =
+      find() + FindModule.eventPath; // FindEventModule initialPath
 
-  /// Profile Verification
-  static const String profileVerification = profile + AppPaths.verification;
+  /// FindPersonModule
+  /* */ /* */ static String findPersonDetailsRoute =
+      findPersonRoute + FindPersonModule.detailsPath;
 
-  /// Find
-  static const String find = AppPaths.find;
-
-  /// Find Person
-  static const String findPerson = find + AppPaths.person;
-  static const String findPersonDetails = findPerson + AppPaths.details;
-
-  /// Find Event
-  static const String findEvent = find + AppPaths.event;
+  /// ProfileModule
+  /* */ static String profileSettingsRoute = profile() + ProfileModule.settingsPath; // ProfileSettingsModule initialPath
+  /* */ static String profileVerificationRoute = profile() + ProfileModule.verificationPath; // ProfileVerificationModule initialPath
 }
