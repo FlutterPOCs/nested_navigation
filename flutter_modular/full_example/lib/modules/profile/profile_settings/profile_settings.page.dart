@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:nested_navigation_flutter_modular_full_example/core/app.routes.dart';
-import 'package:nested_navigation_flutter_modular_full_example/core/navigation_manager.dart';
+import 'package:nested_navigation_flutter_modular_full_example/exports.dart';
 
 class ProfileSettingsPage extends StatelessWidget {
   const ProfileSettingsPage({super.key});

@@ -2,9 +2,9 @@ import 'dart:developer';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:flutter_modular/src/presenter/navigation/modular_book.dart';
-import 'package:flutter_modular/src/presenter/navigation/modular_route_information_parser.dart';
-import 'package:nested_navigation_flutter_modular_full_example/core/navigation_manager.dart';
+// import 'package:flutter_modular/src/presenter/navigation/modular_book.dart';
+// import 'package:flutter_modular/src/presenter/navigation/modular_route_information_parser.dart';
+import 'package:nested_navigation_flutter_modular_full_example/exports.dart';
 
 class AppWidget extends StatelessWidget {
   const AppWidget({super.key});

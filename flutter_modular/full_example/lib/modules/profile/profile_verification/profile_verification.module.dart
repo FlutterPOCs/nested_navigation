@@ -1,5 +1,5 @@
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:nested_navigation_flutter_modular_full_example/modules/profile/profile_verification/profile_verification.page.dart';
+import 'package:nested_navigation_flutter_modular_full_example/exports.dart';
 
 class ProfileVerificationModule extends Module {
   @override

@@ -1,5 +1,5 @@
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:nested_navigation_flutter_modular_full_example/core/app.paths.dart';
+import 'package:nested_navigation_flutter_modular_full_example/exports.dart';
 
 import 'find_person.details.page.dart';
 import 'find_person.page.dart';

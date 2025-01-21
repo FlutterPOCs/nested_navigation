@@ -1,4 +1,4 @@
-import 'package:nested_navigation_flutter_modular_full_example/core/app.paths.dart';
+import 'package:nested_navigation_flutter_modular_full_example/exports.dart';
 
 /// AppAbsolutPaths
 class AppRoutes {

@@ -1,0 +1,12 @@
+export 'package:nested_navigation_flutter_modular_full_example/core/navigation_manager.dart';
+export 'package:nested_navigation_flutter_modular_full_example/core/app.routes.dart';
+export 'package:nested_navigation_flutter_modular_full_example/core/app.paths.dart';
+export 'package:nested_navigation_flutter_modular_full_example/modules/profile/profile.module.dart';
+export 'package:nested_navigation_flutter_modular_full_example/modules/profile/profile.root.dart';
+export 'package:nested_navigation_flutter_modular_full_example/modules/profile/profile_settings/profile_settings.module.dart';
+export 'package:nested_navigation_flutter_modular_full_example/modules/profile/profile_verification/profile_verification.module.dart';
+export 'package:nested_navigation_flutter_modular_full_example/modules/profile/profile_verification/profile_verification.page.dart';
+export 'package:nested_navigation_flutter_modular_full_example/modules/find/find_person/find_person.module.dart';
+export 'package:nested_navigation_flutter_modular_full_example/app.module.dart';
+export 'package:nested_navigation_flutter_modular_full_example/modules/profile/profile_settings/profile_settings.page.dart';
+export 'package:nested_navigation_flutter_modular_full_example/modules/find/find_event/find_event.page.dart';
